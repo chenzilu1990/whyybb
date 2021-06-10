@@ -1,0 +1,300 @@
+.fixedElement {
+  position: absolute;
+  z-index: 999;
+}
+.fixedElement .LB {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  left: 20px;
+  bottom: 20px;
+}
+.fixedElement .LT {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  left: 20px;
+  top: 20px;
+}
+.fixedElement .RB {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  right: 20px;
+  bottom: 20px;
+}
+.fixedElement .RT {
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
+  right: 20px;
+  top: 20px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+  pointer-events: none;
+  margin-top: 35px;
+  margin-left: 60px;
+}
+.main .header {
+  display: flex;
+  flex-direction: row;
+}
+.main .header .title .theme {
+  text-align: left;
+  font-size: 38px;
+  color: white;
+}
+.main .header .title .describe {
+  color: #aadde0;
+  font-size: 19px;
+  margin-top: 5px;
+}
+.main .header .menu .areaName {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+.main .header .menu .areaName div {
+  justify-self: center;
+  color: white;
+  font-size: 15px;
+  margin: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+.main .header .menu .areaName #cityName {
+  margin-left: 30px;
+  text-align: center;
+  width: 100px;
+  border: 2px solid #aadde0;
+  align-self: center;
+  justify-self: center;
+}
+.main .header .menu .stat {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  color: white;
+}
+.main .header .menu .stat #title {
+  font-size: 35px;
+  color: white;
+  margin: 0px;
+  margin-left: 35px;
+  inline-size: auto;
+}
+.main .header .menu .stat #title span {
+  display: block;
+  font-size: 19px;
+}
+.main .header .menu .stat .statItems {
+  display: flex;
+  flex-direction: row;
+}
+.main .header .menu .stat .statItems .statConfirmed {
+  border-radius: 5px;
+  width: 135px;
+  height: 70px;
+  background-color: rgba(170, 222, 222, 0.2);
+  font-size: 19px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(-45deg, transparent 15px, rgba(170, 222, 222, 0.2) 0) bottom right;
+}
+.main .header .menu .stat .statItems .statConfirmed span {
+  color: #cf6162;
+  font-size: 24px;
+}
+.main .header .menu .stat .statItems .statCured {
+  border-radius: 5px;
+  width: 135px;
+  height: 70px;
+  background-color: rgba(170, 222, 222, 0.2);
+  font-size: 19px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(-45deg, transparent 15px, rgba(170, 222, 222, 0.2) 0) bottom right;
+}
+.main .header .menu .stat .statItems .statCured span {
+  color: #abdddc;
+  font-size: 24px;
+}
+.main .header .menu .stat .statItems .statDead {
+  border-radius: 5px;
+  width: 135px;
+  height: 70px;
+  background-color: rgba(170, 222, 222, 0.2);
+  font-size: 19px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(-45deg, transparent 15px, rgba(170, 222, 222, 0.2) 0) bottom right;
+}
+.main .header .menu .stat .statItems .statDead span {
+  color: #c7b837;
+  font-size: 24px;
+}
+.main .content {
+  margin-top: 20px;
+}
+.main .content .leftPannel {
+  width: 535px;
+}
+.main .content .leftPannel .newsTitle {
+  font-size: 24px;
+  position: relative;
+  width: 535px;
+  height: 35px;
+  border-top: 1px solid #9f9b9a;
+  border-bottom: 1px solid #9f9b9a;
+  color: white;
+}
+.main .content .leftPannel .newsTitle span {
+  position: absolute;
+  margin-left: 100px;
+  border-top: 1px solid #9f9b9a;
+  border-bottom: 1px solid #9f9b9a;
+  display: inline-block;
+  text-align: right;
+  line-height: 40px;
+  color: white;
+  font-size: 8px;
+  width: 200px;
+  height: 33px;
+}
+.main .content .leftPannel .newsContent {
+  margin-top: 5px;
+  height: 735px;
+  overflow: scroll;
+  pointer-events: all;
+  overflow-x: hidden;
+  text-align: left;
+}
+.main .content .leftPannel .newsContent h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  text-align: left;
+}
+.main .content .leftPannel .newsContent p {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.main .content .leftPannel .newsContent .newsTime {
+  color: #aadde0;
+  margin: 10px;
+  margin-left: 20px;
+}
+.main .content .leftPannel .newsContent .newsText {
+  background-color: rgba(170, 222, 222, 0.2);
+  padding: 20px;
+  color: white;
+  margin-left: 20px;
+}
+.main .content .newsContent::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 2px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+.main .content .newsContent::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #EDEDED;
+}
+.main .content .newsContent::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 2px;
+  background: #535353;
+}
+.main .content .rightPannel {
+  position: fixed;
+  width: 600px;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.main .content .r1 {
+  background-image: url(../imgs/01.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r2 {
+  background-image: url(../imgs/02.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r3 {
+  background-image: url(../imgs/03.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r4 {
+  background-image: url(../imgs/04.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r5 {
+  background-image: url(../imgs/05.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r6 {
+  background-image: url(../imgs/06.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .content .r7 {
+  background-image: url(../imgs/07.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 1920px;
+}
+.main .footer {
+  position: fixed;
+  z-index: 999;
+  padding: 0;
+  right: 73px;
+  bottom: 24px;
+}
+.main .footer .buttons {
+  pointer-events: all;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+}
+.main .footer .buttons img {
+  margin: 0px;
+  padding: 0px;
+}
+@keyframes Join {
+  0% {
+    left: 1920px;
+  }
+  100% {
+    left: 1320px;
+  }
+}
+@keyframes Leave {
+  0% {
+    left: 1320px;
+  }
+  100% {
+    left: 1920px;
+  }
+}
